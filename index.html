@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/base.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+  </head>
+  <body>
+    <audio src="" controls class="song-play"></audio>
+    <div id="main">
+      <div id="sideBar">
+        <div class="logo">
+          <i class="fa-brands fa-spotify"></i>
+          Spotify
+        </div>
+
+        <ul class="sidebar-item">
+          <li>
+            <i class="fa-solid fa-house"></i>
+            Trang chủ
+          </li>
+          <li>
+            <i class="fa-solid fa-magnifying-glass"></i>
+            Tìm kiếm
+          </li>
+          <li>
+            <i class="fa-solid fa-book-open"></i>
+            Thư viện
+          </li>
+          <li class="mt28">
+            <i class="fas fa-plus-square"></i>
+            Tạo playlist
+          </li>
+          <li class="heart-icon">
+            <i class="fas fa-heart"></i>
+            Bài hát ưa thích
+          </li>
+        </ul>
+        <div class="bar"></div>
+        <ul class="mobile-control sidebar-item">
+          <li>
+            <a href="#">Tài khoản</a>
+          </li>
+          <li>
+            <a href="#">Hồ sơ</a>
+          </li>
+          <li>
+            <a href="#">Đăng xuất</a>
+          </li>
+          <li class="mobile-back">Trở về</li>
+        </ul>
+        <ul class="sidebar-item playlist-bar">
+          <li>My Playlist #1</li>
+          <li>My Playlist #2</li>
+          <li>My Playlist #3</li>
+          <li>My Playlist #4</li>
+        </ul>
+      </div>
+      <div class="mobile-more">
+        <i class="fal fa-bars"></i>
+      </div>
+      <div id="content">
+        <div class="account-container">
+          <div class="account">
+            <i class="fa-solid fa-user"></i> DungNguyen
+            <i class="fas fa-caret-down"></i>
+            <i class="fas fa-caret-up"></i>
+          </div>
+          <ul class="account-control">
+            <li>
+              <a href="#">Tài khoản</a>
+            </li>
+            <li>
+              <a href="#">Hồ sơ</a>
+            </li>
+            <li class="sign-out">
+              <a href="">
+                Đăng xuất
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="content-header">
+          <div class="cover-album">
+            <img src="./assets/img/tải xuống.jpg" alt="" />
+          </div>
+          <div class="info-album">
+            <h3>Đĩa Đơn</h3>
+            <h1>Vì mẹ anh bắt chia tay</h1>
+            <h3>Miu Lê, Karik</h3>
+            <h3 class="m-info-album">Đĩa đơn của Miu Lê</h3>
+          </div>
+        </div>
+        <div class="content-playlist">
+          <div class="playlist-header">
+            # &ensp; TIÊU ĐỀ
+            <div class="clock">
+              <i class="fa-solid fa-clock"></i>
+            </div>
+          </div>
+          <ul class="playlist"></ul>
+          <div class="playlist-footer">
+            © 2021 JYP Entertainment Company
+            <br />
+            ℗ 2021 JYP Entertainment Company
+          </div>
+        </div>
+        <div class="content-other"></div>
+      </div>
+
+      <div class="mobile-down">
+        <i class="fal fa-chevron-down"></i>
+      </div>
+
+      <div id="player">
+        <div class="player-container">
+          <div class="player-info">
+            <div class="info-avatar">
+              <img src="./assets/img/logo.png" alt="Song Avatar" />
+            </div>
+            <div class="info-song">
+              <div>
+                <h3></h3>
+                <h4 class="opacity-07"></h4>
+              </div>
+              <div class="info-control opacity-07">
+                <i class="fa-solid fa-heart"></i>
+              </div>
+            </div>
+          </div>
+          <div class="player-song">
+            <div class="song-control">
+              <ul class="control">
+                <li class="random-song">
+                  <i class="fa-solid fa-shuffle"></i>
+                </li>
+                <li class="pre-song">
+                  <i class="fas fa-step-backward"></i>
+                </li>
+                <li class="pause-play-button">
+                  <i class="fas fa-play play-button"></i>
+                  <i class="fas fa-pause pause-button"></i>
+                </li>
+                <li class="next-song">
+                  <i class="fas fa-step-forward"></i>
+                </li>
+                <li class="repeat-song">
+                  <i class="fa-solid fa-repeat"></i>
+                </li>
+              </ul>
+            </div>
+            <div class="progress-song">
+              <div class="start-song opacity-07">0:00</div>
+              <div class="progress-bar">
+                <div class="current-bar"></div>
+              </div>
+              <div class="end-song opacity-07">3:00</div>
+            </div>
+          </div>
+          <div class="player-control">
+            <ul class="control-app">
+              <li>
+                <i class="fa-solid fa-microphone-lines"></i>
+              </li>
+              <li>
+                <i class="fa-solid fa-list"></i>
+              </li>
+              <li>
+                <i class="fa-solid fa-desktop"></i>
+              </li>
+              <li class="volume">
+                <i class="fa-solid fa-volume-high"></i>
+              </li>
+              <li>
+                <div class="progress-volume">
+                  <div class="current-volume"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./assets/app.js"></script>
+  </body>
+</html>

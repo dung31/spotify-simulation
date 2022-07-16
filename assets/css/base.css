@@ -1,0 +1,38 @@
+:root {
+  --white-color: #ffffff;
+  --black-color: #000;
+  --text-color: #333;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  /* 1rem = 10px */
+  line-height: 1.6rem;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+.grid {
+  width: 1200px;
+  max-width: 100%; /*màn hình trên 1200px thì width sẽ là 1200px còn màn dưới 1200px sẽ thu nhỏ lại */
+  margin: 0 auto;
+}
+
+.grid__full-width {
+  width: 100%;
+}
+
+.grid__row {
+  display: flex;
+  flex-wrap: wrap; /* thằng con vượt quá độ dài sẽ nhảy xuống dưới hàng */
+}
